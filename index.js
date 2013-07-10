@@ -19,6 +19,6 @@ if (localDeps && Object.keys(localDeps).length) {
             fs.symlinkSync(src, dest, 'dir')
         }
         console.log("npm install on " + dest)
-        child_process.spawn('npm', ['update'], { stdio:'inherit', cwd:path.join(process.cwd(), dest) })
+        child_process.spawn('npm', ['install'], { stdio:'inherit', cwd:path.join(process.cwd(), dest) })
     })
 }

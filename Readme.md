@@ -3,6 +3,15 @@ Localdeps
 
 Symbolic links local dependencies to your project
 
+Installation
+------------
+
+To use `localdeps`, make sure you first install it globally:
+
+```
+npm install -g localdeps
+```
+
 Usage / Examples
 ----------------
 
@@ -22,7 +31,6 @@ Example:
         "preinstall":"localdeps"
     },
     "dependencies":{
-        "localdeps":"0.1.0",
         "bar":"0.2.0"
     },
 
@@ -32,6 +40,13 @@ Example:
     ...
 }
 ```
+
+Warning!
+--------
+
+If you have any circular local dependencies, localdeps will explode (more accurately, npm install will be called
+recursively forever and ever and ever).
+
 
 License
 -------
