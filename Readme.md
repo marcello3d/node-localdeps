@@ -7,6 +7,7 @@ Usage / Examples
 ----------------
 
 To use, add 3 things to your package.json:
+
 1. add a `localDependencies` section (e.g. `"localDependencies":{ "foo":"../shared/foo/" }`)
 2. add `"scripts": { "preinstall":"localdeps" }`
 3. add `"localdeps":"0.1.x"` to your `dependencies` section
@@ -30,6 +31,7 @@ Example:
     }
     ...
 }
+```
 
 License
 -------
