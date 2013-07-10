@@ -1,0 +1,20 @@
+{
+    "name": "localdeps",
+    "version": "0.1.0",
+    "description": "Checks if everything is up to date",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/marcello3d/node-localdeps.git"
+    },
+    "engines" : {
+        "node" : ">=0.10"
+    },
+    "bin": {
+        "localdeps": "./bin/localdeps"
+    },
+    "keywords": [ "npm", "dependencies", "node_modules", "package.json", "local dependencies" ],
+    "author": "Marcello Bastéa-Forte <marcello@cellosoft.com>",
+    "license": "zlib",
+    "readmeFilename": "Readme.md"
+}
